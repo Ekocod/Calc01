@@ -64,8 +64,8 @@ class CalcMinus {
         if (b.startsWith("\"") && b.endsWith("\"") && b.length() <= 12) {
             a = a.replace("\"", "");
             b = b.replace("\"", "");
+            c = a.replace(b, "");
         } else throw new Exception("Значения строк в выражении должны выделяться двойными кавычками и длиной не более 10 символов");
-        c = a.replace(b, "");
         return c;
     }
 }
